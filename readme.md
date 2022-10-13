@@ -23,21 +23,21 @@
 - Handlebars
 
 # Execução
-    ```bash
-    # clonar o projeto
-    git clone https://github.com/diegocruz-s/booksnodejs
+```bash
+# clonar o projeto
+git clone https://github.com/diegocruz-s/booksnodejs
 
-    # ir para o diretório
-    cd booksnodejs
+# ir para o diretório
+cd booksnodejs
 
-    # instalar dependências
-    npm install
+# instalar dependências
+npm install
 
-    # rodar projeto
-    npm start
+# rodar projeto
+npm start
 
-    Acesse a rota /books para ver o conteúdo
-    ```
+Acesse a rota /books para ver o conteúdo
+```
 
 # Autor
 <p>Diego Cruz's</p>
