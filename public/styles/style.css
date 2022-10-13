@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-bottom: 1px solid #000;
+}
+#listNav{
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+.liNav a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+.liNav a:hover{
+    text-decoration: underline;
+}
+
+.titleNav{
+    font-size: 35px;
+}
+.container{
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.formAddBook{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formAddBook input, .formAddBook textarea{
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.titleAddBook{
+    margin-bottom: 25px;
+    text-align: center;
+}
+.submitFormAdd{
+    font-size: 20px;
+}
+.submitFormAdd:hover{
+    background-color: #fff;
+    border: 1px solid #000;
+}
+.imageBook{
+    height: 150px;
+}
+.allBooks{
+    display: flex;
+    flex-wrap: wrap;
+}
+.titleAddBook{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.allBooks .book{
+    text-align: center;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 5px 6px 5px rgba(0,0,0,.5);
+}
+.allBooks h3, .allBooks p, .allBooks img{
+    margin-bottom: 15px;
+}
+
+
+.allBooks a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 153, 255);
+}
+.allBooks a:hover{
+    text-decoration: underline;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+.btn{
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    border: 1px solid #000;
+}
+.del:hover{
+    background-color: rgb(255, 158, 158);
+}
+.edit:hover{
+    background-color: rgb(158, 189, 255);
+}
+.nameBook{
+    color: rgb(158, 189, 255);
+}
+.back{
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+.back:hover{
+    text-decoration: underline;
+}
+.infoBook{
+    text-align: center;
+}
+.infoBook h2{
+    margin-bottom: 25px;
+}
+.infoBook .sinopseBook{
+    border: 1px solid #000;
+    border-radius: 15px;
+    width: 50%;
+    padding: 10px;
+    margin: 0 auto;
+    box-shadow: 5px 6px 5px rgba(0,0,0,.5);
+}
+.divImgBook{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.divImgBook img{
+    width: 175px;
+    box-shadow: 5px 6px 5px rgba(0,0,0,.5);
+}
+.qtdPag{
+    margin-bottom: 25px;
+}
+.spanPag{
+    color: rgb(158, 189, 255);
+    font-weight: 600;
+}

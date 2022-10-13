@@ -1,0 +1,35 @@
+
+<h1 class="titleAddBook">Livros</h1>
+{{#if message}}
+    <p>{{message.msg}}</p>
+{{/if}}
+<div class="allBooks">
+    {{#each books}}
+        <div class="book">
+            <div>
+                <div class="divImageBook">
+                    <img src="{{this.image}}" alt="{{this.name}}" class="imageBook">
+                </div>
+                <div class="dataBooks">
+                    <h3>{{this.name}}</h3>
+                    <p>Autor: {{this.author}}</p>
+                </div>
+            </div>
+            <div class="sinopseBook">
+                <a href="/books/sinopse/{{this._id}}">Sinopse</a>
+            </div>
+
+            <div class="btns">
+                <form action="/books/delete" method="post">
+                    <input type="hidden" name="id" value="{{this._id}}">
+                    <input type="hidden" name="name" value="{{this.name}}">
+                    <input type="submit" value="Deletar" class="btn del">
+                </form>
+                <form action="/books/edit/{{this._id}}">
+                    <input type="submit" value="Editar" class="btn edit">
+                </form>
+            </div>
+        </div>
+    {{/each}}
+</div>
+

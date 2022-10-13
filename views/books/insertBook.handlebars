@@ -1,0 +1,14 @@
+<div class="container">
+    <h2 class="titleAddBook">Adicionar livro</h2>
+    <form action="/books/add" method="post" class="formAddBook">
+        <input type="text" name="name" placeholder="Nome do livro" required>
+        <input type="text" name="author" placeholder="Author do livro" required>
+        <input type="number" name="qtdPag" placeholder="Qtd. de páginas" required>
+        <input type="text" name="image" placeholder="URL da imagem" required>
+        <textarea name="sinopse" placeholder="Sinopse" required></textarea>
+
+        <input type="submit" class="submitFormAdd" value="Adicionar">
+    </form>
+
+    <a href="/books" class="back">Voltar</a>
+</div>

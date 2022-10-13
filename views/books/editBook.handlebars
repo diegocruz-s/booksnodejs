@@ -1,0 +1,16 @@
+<div class="editBook">
+        <h2 class="titleAddBook">Editar livro: <span class="nameBook">{{book.name}}</span></h2>
+        <form action="/books/edit" method="post" class="formAddBook">
+            <input type="hidden" name="id" value="{{book._id}}">
+            <input type="text" name="name" placeholder="Nome do livro" value="{{book.name}}">
+            <input type="text" name="author" placeholder="Author do livro" value="{{book.author}}">
+            <input type="number" name="qtdPag" placeholder="Qtd. de páginas" value="{{book.qtdPag}}">
+            <input type="text" name="image" placeholder="URL da imagem" value="{{book.image}}">
+            <textarea name="sinopse" placeholder="Sinopse">{{book.sinopse}}</textarea>
+
+            <input type="submit" class="submitFormAdd" value="Editar">
+        </form>
+        <a href="/books" class="back">Voltar</a>
+  </div>
+
+
